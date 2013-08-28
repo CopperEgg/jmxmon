@@ -41,7 +41,7 @@ Verify everything is working with the following command
 ### 3. Clone this GitHub repo:
 
 ```xml
-git clone https://github.com/CopperEgg/jmxtrans-samples.git
+git clone https://github.com/CopperEgg/jmxtrans.git
 ```
 
 ### 4. Edit the jmxtrans.json file to add your Username and CopperEgg APIKey  
