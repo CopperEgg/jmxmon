@@ -1,7 +1,7 @@
 # jmxmon
 
   jmxmon is a tool for monitoring your Tomcat servers and the JVMs upon which they run. 
-A very small, minimal webapp is created that will run on your Tomcat server. From there, jmxmon will collect JVM and Tomcat metrics using JMX, and push the results to CopperEgg.
+A very small, minimal webapp is created that will run on your Tomcat server. From there, jmxmon will collect JVM and Tomcat metrics using JMX, and push the results to Uptime Cloud Monitor.
 jmxmon is built upon the open source embedded-jmxtrans code.
 
   This monitor does not need to be compiled with your Tomcat app. To install, you simply edit one file, build the jmxmon webapp, and copy it to your tomcat/webapps directory.
@@ -44,20 +44,20 @@ Verify everything is working with the following command
 git clone https://github.com/CopperEgg/jmxtrans.git
 ```
 
-### 4. Edit the jmxtrans.json file to add your Username and CopperEgg APIKey  
+### 4. Edit the jmxtrans.json file to add your Username and Uptime Cloud Monitor APIKey
   
 ```xml
 cd  jmxmon/src/main/resources
 edit jmxtrans.json
     In the "OutputWriters" array, find the CopperEggWriter settings.
         Replace  <YOUR_USER_NAME>  with your user name
-        Replace  <YOUR_APIKEY> with your CopperEgg APIKEY
+        Replace  <YOUR_APIKEY> with your Uptime Cloud Monitor APIKEY
 Save and close jmxtrans.json
 ```  
   
 ### 5. Optionally, edit copperegg_config.json:
 
-This is only recommended if you are familiar with the CopperEgg API. It isn't necessary to get started.
+This is only recommended if you are familiar with the Uptime Cloud Monitor API. It isn't necessary to get started.
 
 copperegg_config.json will create several metric groups, designed for optimal efficiency when running with embedded-jmxtrans.
 It will also create 2 dashboards:
@@ -95,10 +95,10 @@ For documentation about the embedded-jmxtrans module, (which is pulled-in to jmx
 * [Documentation](https://github.com/jmxtrans/embedded-jmxtrans/wiki)
 * [Latest javadocs](http://jmxtrans.github.com/embedded-jmxtrans/apidocs/)
 
-To learn more about CopperEgg, and to sign up for a free trial: 
-* [CopperEgg Homepage](http://www.copperegg.com)
-* [CopperEgg Signup](https://app.copperegg.com/signup)
-* [CopperEgg Login](https://app.copperegg.com/login)
+To learn more about Uptime Cloud Monitor, and to sign up for a free trial:
+* [Uptime Cloud Monitor Homepage](https://www.idera.com/infrastructure-monitoring-as-a-service/)
+* [Uptime Cloud Monitor Signup](https://www.idera.com/infrastructure-monitoring-as-a-service/freetrialsubscriptionform)
+* [Uptime Cloud Monitor Login](https://app.copperegg.com/login)
 
 
 License
@@ -106,7 +106,7 @@ License
 
 Please refer to the LICENSE and NOTIFICATION files included by the authors of embedded-jmxtrans and embedded-jmxtrans-samples.
 
-CopperEgg has provided two JSON files in this repository, which are used to configure the CopperEggWriter. 
+Uptime Cloud Monitor has provided two JSON files in this repository, which are used to configure the CopperEggWriter.
 These files are made available under the terms of the MIT License:
 
 Permission is hereby granted, free of charge, to any person obtaining a
